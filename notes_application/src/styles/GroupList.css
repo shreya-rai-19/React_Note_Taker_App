@@ -1,71 +1,106 @@
-.GroupList{
-    padding: 20px;
-    width: 350px;
-    /* margin: auto; */
-    margin: 20px;
-    /* background-color: chartreuse; */
+.GroupList {
+  padding: 20px;
+  width: 350px;
+  margin: 20px;
 }
-.header2{
-    color: #000;
-font-family: Roboto;
-font-size: 31.52px;
-font-style: normal;
-font-weight: 500;
-line-height: normal;
-letter-spacing: 0.63px;
-margin-bottom: 15px;
-margin-left:20px;
-margin-top: 20px;
+.header2 {
+  color: #000;
+  font-family: Roboto;
+  font-size: 31.52px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.63px;
+  margin-bottom: 15px;
+  margin-left: 20px;
+  margin-top: 20px;
 }
-.GrpLstbtn{
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-    position: relative;
+.GrpLstbtn {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  position: relative;
+  margin-bottom: 20px;
 }
-.btn_addgrp{
-    width: 300px;
-height: 51px;
-flex-shrink: 0;
-border-radius: 50px;
-background: #000;
-    color: #FFF;
-font-family: Roboto;
-font-size: 24px;
-font-style: normal;
-font-weight: 500;
-line-height: 97.688%; /* 26.376px */
-letter-spacing: 0.54px;
+.btn_addgrp {
+  width: 300px;
+  height: 51px;
+  flex-shrink: 0;
+  border-radius: 50px;
+  background: #000;
+  color: #fff;
+  font-family: Roboto;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 97.688%;
+  letter-spacing: 0.54px;
 }
-.plus{
-    padding-top: 10px;
-    padding-right: 20px;
-    left: 0;
-    color: #FFF;
-font-family: Roboto;
-font-size: 35px;
-font-style: normal;
-font-weight: 500;
-line-height: 97.688%; /* 39.772px */
-letter-spacing: 0.814px;
+.plus {
+  padding-top: 10px;
+  padding-right: 20px;
+  left: 0;
+  color: #fff;
+  font-family: Roboto;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 97.688%;
+  letter-spacing: 0.814px;
 }
-.GrpLst{
-    margin-left: 20px;
+.GrpLst {
+  margin-left: 20px;
+  max-height: 550px;
+  overflow-y: scroll;
 }
-.selected-group {
-    background-color: #cce5ff; /* Add your desired background color here */
-    border: 2px solid #007bff; /* Add your desired border style here */
-    padding: 4px 8px; /* Add padding to make it visually appealing */
-  }
-  
-li{
-list-style: none;
-color: #000;
-font-family: Roboto;
-font-size: 20.67px;
-font-style: normal;
-font-weight: 500;
-line-height: normal;
-letter-spacing: 0.413px;
-margin-top: 20px;
+.GrpLst::-webkit-scrollbar {
+  width: 8px;
+}
+
+.GrpLst::-webkit-scrollbar-thumb {
+  background-color: #face8c;
+}
+
+.GrpLst::-webkit-scrollbar-track {
+  background-color: #e4e4e4;
+}
+
+.group-disc {
+  width: 44px;
+  height: 42px;
+  border-radius: 50%;
+  margin: 5px;
+  padding: 2px;
+  color: #fff;
+  font-family: Roboto;
+  font-size: 23px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 97.688%;
+  letter-spacing: 0.482px;
+  padding-left: 11px;
+  padding-top: 16px;
+}
+li {
+  list-style: none;
+  color: #000;
+  font-family: Roboto;
+  font-size: 20.67px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.413px;
+  margin-top: 20px;
+  display: flex;
+}
+.group-name {
+  color: #000;
+  font-family: Roboto;
+  font-size: 20.67px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.413px;
+  padding-top: 20px;
+  padding-left: 10px;
 }

@@ -12,7 +12,7 @@ const GroupList = () => {
   }, []);
 
   const createGroup = (groupName, selectedColor) => {
-    const newGroup = { name: groupName, color: selectedColor };
+    const newGroup = { name: groupName, color: selectedColor};
     const updatedGroups = [...groups, newGroup];
     setGroups(updatedGroups);
     localStorage.setItem('groups', JSON.stringify(updatedGroups));
@@ -26,20 +26,39 @@ const GroupList = () => {
     setPopupVisible(false);
   };
 
+
   return (
-    <div className="group-list">
-      <h2>List of Groups</h2>
+    <>
+    <h1 className="header2">Pocket Notes</h1>
+    <div className="GroupList">  
+
+    <div className="GrpLstbtn">
+          <button className="btn_addgrp" onClick={openPopup}>
+            <span className="plus">+</span>Create Notes group
+          </button>
+    </div>
+
+    <div className="GrpLst">
+
       <ul>
         {groups.map((group, index) => (
-          <li key={index} style={{ backgroundColor: group.color }}>
-            <div className="group-icon"></div>
-            {group.name}
+          <li key={index}>
+            <div
+              className="group-disc"
+              style={{ backgroundColor: group.color }}>
+              {group.name[0]}{group.name[1].toUpperCase()}
+            </div>
+            <span className="group-name">{group.name}</span>
           </li>
         ))}
       </ul>
-      <button onClick={openPopup}>Create Group</button>
+
+    </div>
+
+
       {isPopupVisible && <MenuPopup createGroup={createGroup} closePopup={closePopup} />}
     </div>
+    </>
   );
 };
 
