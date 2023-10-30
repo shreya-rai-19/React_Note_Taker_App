@@ -1,0 +1,53 @@
+.image1{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    align-items: center;
+}
+.heading1{
+    color: #000;
+font-family: Roboto;
+font-size: 50px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: 1px;
+margin: auto;
+text-align: center;
+}
+.para1{
+    margin-top: 30px;
+    width: 600px;
+    color: #292929;
+font-family: Roboto;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 32px; /* 145.455% */
+letter-spacing: 0.44px;
+text-align: center;
+align-items: center;
+margin-left: auto;
+margin-right: auto;
+}
+.safety{
+    display: flex;
+    gap: 15px;
+left: 60%;
+bottom: 5%;
+position: absolute;
+}
+.lockimg{
+    width: 20px;
+    height: 23px;
+}
+.safetypara{
+    color: #292929;
+font-family: Roboto;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 32px; /* 145.455% */
+letter-spacing: 0.44px;
+}

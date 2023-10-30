@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.main{
+    display: flex;}
+.left{
+    width: 30%;
+    height: 100vh;
+    background-color: #FFF;
+}
+.right{
+    width: 70%;
+    height: 100vh;
+    background-color: #F7ECDC;
+}
