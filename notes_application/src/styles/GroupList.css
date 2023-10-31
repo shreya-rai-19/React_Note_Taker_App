@@ -1,6 +1,6 @@
 .GroupList {
   padding: 20px;
-  width: 350px;
+  width: 360px;
   margin: 20px;
 }
 .header2 {
@@ -49,7 +49,7 @@
   letter-spacing: 0.814px;
 }
 .GrpLst {
-  margin-left: 20px;
+  margin-left: 13px;
   max-height: 550px;
   overflow-y: scroll;
 }
@@ -91,6 +91,7 @@ li {
   line-height: normal;
   letter-spacing: 0.413px;
   margin-top: 20px;
+  padding-left: 15px;
   display: flex;
 }
 .group-name {

@@ -2,8 +2,10 @@ import React, { useState, useEffect } from 'react';
 import MenuPopup from './MenuPopup';
 import '../styles/GroupList.css';
 
-const GroupList = () => {
-  const [groups, setGroups] = useState([]);
+const GroupList = ({onGroupSelect, selectedGroup}) => {
+  // const [groups, setGroups] = useState([]);
+  const [groups, setGroups] = useState(JSON.parse(localStorage.getItem('groups')) || []);
+
   const [isPopupVisible, setPopupVisible] = useState(false);
 
   useEffect(() => {
@@ -42,7 +44,13 @@ const GroupList = () => {
 
       <ul>
         {groups.map((group, index) => (
-          <li key={index}>
+          <li key={index}
+          onClick={() => onGroupSelect(group)}
+          style={{
+              backgroundColor: selectedGroup === group ? '#F7ECDC' : 'white',
+              borderRadius: '32px 0px 0px 32px',
+            }}
+          >
             <div
               className="group-disc"
               style={{ backgroundColor: group.color }}>
