@@ -1,0 +1,87 @@
+.notes{
+    width: 100%;
+}
+.notes_list{
+    max-height: 380px;
+    height: 380px;
+    padding: 40px 40px 0px 0px;
+    background-color: #F7ECDC;
+    overflow-y: scroll;
+}
+.notes_list::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  .notes_list::-webkit-scrollbar-thumb {
+    background-color: rgb(253, 143, 104);
+  }
+  
+  .notes_list::-webkit-scrollbar-track {
+    background-color: #fff;
+  }
+  
+.notes_names{
+    list-style-type: none;
+    display: flex;
+    gap: 50px;
+    margin-bottom: 30px;
+}
+.date_time{
+    color: #353535;
+    font-family: Roboto;
+    font-size: 18.634px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 97.688%;
+    letter-spacing: 0.373px;
+    padding-left: 40px;
+}
+.note_content{
+    color: #000;
+font-family: Roboto;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 160.188%; 
+letter-spacing: 0.63px;
+width: 920px;
+}
+.add-note{
+    width: 94%;
+    height: 100%;
+    background-color: #E8E8E8;
+padding: 30px;
+}
+.text_area{
+    width: 990px;
+height: 150px;
+    border-radius: 9px;
+border: 1px solid #CCC;
+background: #FFF;
+}
+.button_add{
+    margin-left: 800px;
+margin-top: -40px;
+}
+input{
+    border: none;
+    color: #9A9A9A;
+font-family: Roboto;
+font-size: 22px;
+font-style: normal;
+font-weight: 50;
+line-height: normal;
+letter-spacing: 0.596px;
+/* padding-left: 20px; */
+/* padding-top: -30px; */
+width: 990px;
+height: 150px;
+}
+.enter_btn{
+    width: 34.438px;
+height: 29px;
+margin-left: 80px;
+margin-top: -120px;
+background-color: #FFF;
+border: none;
+}

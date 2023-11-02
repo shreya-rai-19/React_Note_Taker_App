@@ -5,12 +5,12 @@
 .main{
     display: flex;}
 .left{
-    width: 30%;
+    width: 25%;
     height: 100vh;
     background-color: #FFF;
 }
 .right{
-    width: 70%;
+    width: 75%;
     height: 100vh;
-    background-color: #F7ECDC;
+    /* background-color: #F7ECDC; */
 }

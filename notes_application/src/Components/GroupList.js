@@ -3,7 +3,6 @@ import MenuPopup from './MenuPopup';
 import '../styles/GroupList.css';
 
 const GroupList = ({onGroupSelect, selectedGroup}) => {
-  // const [groups, setGroups] = useState([]);
   const [groups, setGroups] = useState(JSON.parse(localStorage.getItem('groups')) || []);
 
   const [isPopupVisible, setPopupVisible] = useState(false);
@@ -14,7 +13,7 @@ const GroupList = ({onGroupSelect, selectedGroup}) => {
   }, []);
 
   const createGroup = (groupName, selectedColor) => {
-    const newGroup = { name: groupName, color: selectedColor};
+    const newGroup = { name: groupName, color: selectedColor, notes: []};
     const updatedGroups = [...groups, newGroup];
     setGroups(updatedGroups);
     localStorage.setItem('groups', JSON.stringify(updatedGroups));
@@ -45,6 +44,7 @@ const GroupList = ({onGroupSelect, selectedGroup}) => {
       <ul>
         {groups.map((group, index) => (
           <li key={index}
+          className='grp_names'
           onClick={() => onGroupSelect(group)}
           style={{
               backgroundColor: selectedGroup === group ? '#F7ECDC' : 'white',

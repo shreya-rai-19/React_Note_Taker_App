@@ -58,11 +58,11 @@
 }
 
 .GrpLst::-webkit-scrollbar-thumb {
-  background-color: #face8c;
+  background-color: #fff;
 }
 
 .GrpLst::-webkit-scrollbar-track {
-  background-color: #e4e4e4;
+  background-color: #fff;
 }
 
 .group-disc {
@@ -81,7 +81,7 @@
   padding-left: 11px;
   padding-top: 16px;
 }
-li {
+.grp_names {
   list-style: none;
   color: #000;
   font-family: Roboto;

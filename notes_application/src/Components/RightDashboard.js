@@ -1,5 +1,6 @@
 import React from "react";
 import "../styles/Right_Dashboard.css";
+import Notes from "./Notes";
 import dashbd from "../assets/dashbd.png";
 import lockimg from "../assets/lock.png";
 
@@ -8,13 +9,13 @@ const RightDashboard = ({ selectedGroup }) => {
     <div className="RightSection">
       {selectedGroup ? (
         <div>
-          <h2>Notes for {selectedGroup.name}</h2>
-          {/* <ul>
-            {selectedGroup.notes.map((note, index) => (
-              <li key={index}>{note}</li>
-            ))}
-          </ul> */}
-          {/* Add functionality to add new notes */}
+          <div className="group-details">
+            <div className="group-disc" style={{ backgroundColor: selectedGroup.color }}>{selectedGroup.name[0]}{selectedGroup.name[1].toUpperCase()}</div>
+            <div className="group-name">{selectedGroup.name}</div>
+          </div>
+          
+          <Notes selectedGroup={selectedGroup} />
+        
         </div>
       ) : (
         <div>
