@@ -57,7 +57,6 @@
 }
 .button_add {
   position: absolute;
-  /* margin-left: 850px; */
   margin-left: 60vw;
   margin-top: -40px;
 }
@@ -86,7 +85,6 @@ input {
 .enter_btn {
   width: 34.438px;
   height: 29px;
-  /* margin-left: 80px; */
   margin-top: -120px;
   background-color: #fff;
   border: none;
@@ -121,17 +119,14 @@ input {
   .text_area {
     width: 85vw;
     height: 80px;
-    /* width: 318px; */
   }
   input {
     font-size: 18px;
     height: 94px;
-    /* width: 295px; */
     width: 85vw;
     padding-left: 10px;
   }
   .button_add {
-    /* margin-left: 180px; */
     margin-left: 70vw;
   }
   .enter_btn {

@@ -61,7 +61,7 @@ const Notes = ({ selectedGroup }) => {
 
   const handleKeyPress = (event) => {
     if (event.key === 'Enter') {
-      handleAddNote(); // Call the handleAddNote function when Enter key is pressed
+      handleAddNote(); 
     }
   };
 
