@@ -64,7 +64,11 @@ const GroupList = ({onGroupSelect, selectedGroup}) => {
     </div>
 
 
-      {isPopupVisible && <MenuPopup createGroup={createGroup} closePopup={closePopup} />}
+      {isPopupVisible && 
+      <div className='popup-container'>
+      <MenuPopup createGroup={createGroup} closePopup={closePopup} />
+      </div>
+      }
     </div>
     </>
   );

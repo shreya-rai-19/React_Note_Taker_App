@@ -30,7 +30,7 @@
     font-size: 27px;
     font-style: normal;
     font-weight: 500;
-    line-height: 160.188%; /* 43.754px */
+    line-height: 160.188%;
     letter-spacing: 0.956px;
     margin-right: 20px;
     margin-bottom: 20px;
@@ -48,7 +48,7 @@
     font-size: 23px;
     font-style: normal;
     font-weight: 400;
-    line-height: 160.188%; /* 36.843px */
+    line-height: 160.188%;
     letter-spacing: 0.805px;
     padding-left: 25px;
     margin-top: 20px;
@@ -98,4 +98,74 @@
     color: red;
     font-size: small;
     padding-left: 15px;
+  }
+
+  
+  /* @media screen and (max-width: 768px){
+    .GroupPopup{
+      width: 250px;
+      height: 170px;
+      top: 30%;
+      left: 50%;
+    }
+    .grp-header{
+      font-size: 20px;
+    }
+    .create-header{
+      font-size: 15px;
+    }
+    .input-grp {
+      width: 195px;
+      height: 46px;
+      font-size: 11px;
+      padding-left: 8px;
+      margin-top: 2px;
+      padding-bottom: 5px;
+      line-height: 20px;
+    }
+    .color-options {
+      margin-top: 10px;
+    }
+    .color-option {
+      width: 15px;
+      height: 15px;
+    }
+  
+  } */
+
+  @media (max-width: 768px) {
+    .GroupPopup {
+      /* width: 58%; */
+      width: 80%;
+      height: auto;
+      top: 20%; /* Adjust the vertical positioning */
+      /* left: 33%; */
+      
+      transform: translate(-50%, 0);
+    }
+    .create-header {
+      font-size: 17px; /* Adjust font size */
+      padding-left: 7px;
+    }
+    .input-grp {
+      /* width: 70%; */
+      /* width: 100%; */
+      width: 55%;
+      font-size: 14px; /* Adjust font size */
+      padding-bottom: 5px;
+      padding-left: 10px;
+    }
+    
+    .color-option {
+      width: 30px;
+      height: 30px;
+    }
+    .create-btn {
+      width: 90%;
+      font-size: 18px; /* Adjust font size */
+      margin-top: 20px; /* Add some spacing between the button and color options */
+    }
+    .error-message {
+      font-size: small;
+    }
   }

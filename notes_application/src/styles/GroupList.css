@@ -1,5 +1,5 @@
 .GroupList {
-  padding: 20px;
+  padding: 18px;
   width: 360px;
   margin: 20px;
 }
@@ -104,4 +104,12 @@
   letter-spacing: 0.413px;
   padding-top: 20px;
   padding-left: 10px;
+}
+@media screen and (max-width: 768px){
+  .GroupList{
+    padding: 14px;
+  }
+  .btn_addgrp{
+    width: 285px;
+  }
 }

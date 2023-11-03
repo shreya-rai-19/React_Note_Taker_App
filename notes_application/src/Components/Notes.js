@@ -80,13 +80,13 @@ const Notes = ({ selectedGroup }) => {
           </li>
         ))
         ): (
-          <li>No Notes avaiable</li>
+          <li className='nonotes'>No Notes avaiable</li>
         )}
       </ul>
 
       <div className="add-note">
         
-        <div className='text_area'>
+        <div>
         <input
           type="text"
           value={newNote}

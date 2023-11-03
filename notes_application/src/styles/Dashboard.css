@@ -8,9 +8,51 @@
     width: 25%;
     height: 100vh;
     background-color: #FFF;
+    
 }
 .right{
     width: 75%;
     height: 100vh;
-    /* background-color: #F7ECDC; */
+    background-color: #F7ECDC;
+}
+
+@media screen and (max-width: 768px){
+    .main{
+        display: flex;
+        flex-direction: column;
+    }
+    .left{
+        width: 100%;
+    }
+
+    /* .right{
+        width: 100%;
+        height: 100%;
+    } */
+    .right {
+        display: none;
+      }
+      /* Show RightDashboard when a group is selected */
+      .right.visible {
+        display: block;
+        width: 100%;
+        height: 100%;
+      }
+    .left.hidden{
+        display: none;
+    }
+    /* .right{
+        display: none;
+    } */
+    /* .right.visible{
+        display: block;
+        width: 100%;
+        height: 100%;
+    } */
+    /* .right.visible{
+    transform: translateX(100%);
+}
+.right.hidden{
+    transform: translateX(0);
+} */
 }

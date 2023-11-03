@@ -40,7 +40,7 @@ const MenuPopup = ({ createGroup, closePopup }) => {
       setSelectedColor(null);
       closePopup();
     } else {
-      setErrorMessage('Please enter both Group Name and choose a color.');
+      setErrorMessage('Please enter Group Name and color.');
     }
   };
 
